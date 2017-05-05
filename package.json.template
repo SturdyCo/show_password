@@ -1,0 +1,26 @@
+{
+  "name": "{package-name}",
+  "version": "0.0.1",
+  "description": "{Package description.}",
+  "main": "{main.entry.file.js}",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/{your-github-user}/{your-github-repository}.git"
+  },
+  "keywords": [
+    "{put}"
+    "{the}",
+    "{package}",
+    "{keywords}",
+    "{here}"
+  ],
+  "author": "{Your Full Name}",
+  "license": "{YOUR_LICENSE}",
+  "bugs": {
+    "url": "https://github.com/{your-github-user}/{your-github-repository}/issues"
+  },
+  "homepage": "https://github.com/{your-github-user}/{your-github-repository}#readme"
+}

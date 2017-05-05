@@ -1,0 +1,24 @@
+{
+  "name": "npm-package-boilerplate",
+  "version": "0.0.2",
+  "description": "A boilerplate ready to create and publish new npm packages.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Danilo-Araujo-Silva/npm-package-boilerplate.git"
+  },
+  "keywords": [
+    "npm",
+    "package",
+    "boilerplate"
+  ],
+  "author": "Danilo Araújo Silva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Danilo-Araujo-Silva/npm-package-boilerplate/issues"
+  },
+  "homepage": "https://github.com/Danilo-Araujo-Silva/npm-package-boilerplate#readme"
+}
