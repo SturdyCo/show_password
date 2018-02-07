@@ -1,24 +1,18 @@
 {
-  "name": "npm-package-boilerplate",
-  "version": "0.0.2",
-  "description": "A boilerplate ready to create and publish new npm packages.",
+  "name": "password-revealer",
+  "version": "0.0.1",
+  "description": "Reveals passwords",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Danilo-Araujo-Silva/npm-package-boilerplate.git"
+    "url": "git+https://github.com/{your-github-user}/{your-github-repository}.git"
   },
   "keywords": [
-    "npm",
-    "package",
-    "boilerplate"
   ],
-  "author": "Danilo Araújo Silva",
+  "author": "Garrett Martin",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Danilo-Araujo-Silva/npm-package-boilerplate/issues"
-  },
-  "homepage": "https://github.com/Danilo-Araujo-Silva/npm-package-boilerplate#readme"
+  "homepage": "https://github.com/{your-github-user}/{your-github-repository}#readme"
 }
