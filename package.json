@@ -1,6 +1,6 @@
 {
   "name": "show_password",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "The easiest way to show and hide the text inside a password field.",
   "main": "show_password.js",
   "scripts": {

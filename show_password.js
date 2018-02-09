@@ -74,4 +74,8 @@ var ShowPassword = {
   }
 }
 
-module.exports = ShowPassword
+if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
+  module.exports = ShowPassword;
+} else {
+  window.ShowPassword = ShowPassword;
+}
