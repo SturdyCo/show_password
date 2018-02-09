@@ -28,6 +28,16 @@ Add a wrapper `div` with an `id` of `showPassword` around your password input fi
 
 That's it!
 
+### Rails setup
+
+`yarn add show_password`
+
+Then, add the following to `application.js`:
+
+```javascript
+//= require show_password/show_password
+```
+
 ## Configuration
 
 You can use the `ShowPassword.config` object to configure ShowPassword.

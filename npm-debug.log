@@ -1,0 +1,160 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/Garrett/.nvm/versions/node/v6.4.0/bin/node',
+1 verbose cli   '/Users/Garrett/.nvm/versions/node/v6.4.0/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.3
+3 info using node@v6.4.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/Garrett/Desktop/Projects/show_password',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/Garrett/.npm/show_password/0.0.1/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/Garrett/.npm correctMkdir not in flight; initializing
+10 info lifecycle show_password@0.0.1~prepublish: show_password@0.0.1
+11 silly lifecycle show_password@0.0.1~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/Garrett/.npm/show_password/0.0.1/package.tgz',
+12 verbose tar pack   '/Users/Garrett/Desktop/Projects/show_password' ]
+13 verbose tarball /Users/Garrett/.npm/show_password/0.0.1/package.tgz
+14 verbose folder /Users/Garrett/Desktop/Projects/show_password
+15 verbose addLocalTarball adding from inside cache /Users/Garrett/.npm/show_password/0.0.1/package.tgz
+16 verbose correctMkdir /Users/Garrett/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd show_password@0.0.1
+18 verbose afterAdd /Users/Garrett/.npm/show_password/0.0.1/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/Garrett/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/Garrett/.npm/show_password/0.0.1/package/package.json written
+21 silly publish { name: 'show_password',
+21 silly publish   version: '0.0.1',
+21 silly publish   description: 'The easiest way to show and hide the text inside a password field.',
+21 silly publish   main: 'show_password.js',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/sturdyco/show_password.git' },
+21 silly publish   keywords: [ 'password' ],
+21 silly publish   author: { name: 'Garrett Martin' },
+21 silly publish   license: 'MIT',
+21 silly publish   homepage: 'https://github.com/sturdyco/show_password#readme',
+21 silly publish   readme: '# ShowPassword\n\nThe easiest way to show and hide the text inside a password field.\n\n![demo](https://d2ffutrenqvap3.cloudfront.net/items/0d2X0O2k1p1w1Z2W0I3Y/Screen%20Recording%202018-02-08%20at%2020.13.gif?X-CloudApp-Visitor-Id=2108595)\n\n## Install\n\n`npm install show_password --save`\n\n## Usage\n\nNote: To use in a Node project, you\'ll have to use a package like [jsdom](https://github.com/jsdom/jsdom) to access to `document` object.\n\n```javascript\nvar ShowPassword = require(\'show_password\')\n\nShowPassword.initialize()\n```\n\nAdd a wrapper `div` with an `id` of `showPassword` around your password input field.\n\n```html\n<div class="showPassword">\n  <input type="password">\n</div>\n```\n\nThat\'s it!\n\n## Configuration\n\nYou can use the `ShowPassword.config` object to configure ShowPassword.\n\n`config.color`: Change the color of the visibility icons.\n\n\n## Author\n[Garrett Martin](https://sturdy.work)\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: 'ee7eb0afb18af42d98b1362591c2007503e28c65',
+21 silly publish   bugs: { url: 'https://github.com/sturdyco/show_password/issues' },
+21 silly publish   _id: 'show_password@0.0.1',
+21 silly publish   _shasum: 'c9a76d6a648656def9f29a423a4df932df90a2d5',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name show_password
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'show_password',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'show_password',
+26 silly mapToRegistry   name: 'show_password',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/show_password
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /Users/Garrett/.npm/show_password/0.0.1/package.tgz
+30 verbose request uri https://registry.npmjs.org/show_password
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 11:51:13 AM
+33 verbose request using bearer token for auth
+34 verbose request id 0b683023e1bf0c7f
+35 http request PUT https://registry.npmjs.org/show_password
+36 http 503 https://registry.npmjs.org/show_password
+37 verbose bad json <?xml version="1.0" encoding="utf-8"?>
+37 verbose bad json <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+37 verbose bad json  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+37 verbose bad json <html>
+37 verbose bad json   <head>
+37 verbose bad json     <title>503 first byte timeout</title>
+37 verbose bad json   </head>
+37 verbose bad json   <body>
+37 verbose bad json     <h1>Error 503 first byte timeout</h1>
+37 verbose bad json     <p>first byte timeout</p>
+37 verbose bad json     <h3>Guru Mediation:</h3>
+37 verbose bad json     <p>Details: cache-mdw17330-MDW 1518198706 285006886</p>
+37 verbose bad json     <hr>
+37 verbose bad json     <p>Varnish cache server</p>
+37 verbose bad json   </body>
+37 verbose bad json </html>
+38 error registry error parsing json
+39 verbose headers { server: 'Varnish',
+39 verbose headers   'retry-after': '0',
+39 verbose headers   'content-type': 'text/html; charset=utf-8',
+39 verbose headers   'content-length': '448',
+39 verbose headers   'accept-ranges': 'bytes',
+39 verbose headers   date: 'Fri, 09 Feb 2018 17:51:45 GMT',
+39 verbose headers   via: '1.1 varnish',
+39 verbose headers   connection: 'close',
+39 verbose headers   'x-served-by': 'cache-mdw17330-MDW',
+39 verbose headers   'x-cache': 'MISS',
+39 verbose headers   'x-cache-hits': '0',
+39 verbose headers   'x-timer': 'S1518198674.934029,VS0,VE31698' }
+40 info retry will retry, error on last attempt: SyntaxError: Unexpected token < in JSON at position 1
+40 info retry
+40 info retry <?xml version="1.0" encoding="utf-8"?>
+40 info retry <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+40 info retry  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+40 info retry <html>
+40 info retry   <head>
+40 info retry     <title>503 first byte timeout</title>
+40 info retry   </head>
+40 info retry   <body>
+40 info retry     <h1>Error 503 first byte timeout</h1>
+40 info retry     <p>first byte timeout</p>
+40 info retry     <h3>Guru Mediation:</h3>
+40 info retry     <p>Details: cache-mdw17330-MDW 1518198706 285006886</p>
+40 info retry     <hr>
+40 info retry     <p>Varnish cache server</p>
+40 info retry   </body>
+40 info retry </html>
+41 info attempt registry request try #2 at 11:51:55 AM
+42 verbose request using bearer token for auth
+43 http request PUT https://registry.npmjs.org/show_password
+44 http 403 https://registry.npmjs.org/show_password
+45 verbose headers { 'content-type': 'application/json',
+45 verbose headers   'cache-control': 'max-age=300',
+45 verbose headers   'content-length': '93',
+45 verbose headers   'accept-ranges': 'bytes',
+45 verbose headers   date: 'Fri, 09 Feb 2018 17:51:56 GMT',
+45 verbose headers   via: '1.1 varnish',
+45 verbose headers   connection: 'keep-alive',
+45 verbose headers   'x-served-by': 'cache-ord1723-ORD',
+45 verbose headers   'x-cache': 'MISS',
+45 verbose headers   'x-cache-hits': '0',
+45 verbose headers   'x-timer': 'S1518198716.773943,VS0,VE1196',
+45 verbose headers   vary: 'Accept-Encoding, Accept' }
+46 verbose request invalidating /Users/Garrett/.npm/registry.npmjs.org/show_password on PUT
+47 error publish Failed PUT 403
+48 verbose stack Error: You cannot publish over the previously published versions: 0.0.1. : show_password
+48 verbose stack     at makeError (/Users/Garrett/.nvm/versions/node/v6.4.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+48 verbose stack     at CachingRegistryClient.<anonymous> (/Users/Garrett/.nvm/versions/node/v6.4.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+48 verbose stack     at Request._callback (/Users/Garrett/.nvm/versions/node/v6.4.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+48 verbose stack     at Request.self.callback (/Users/Garrett/.nvm/versions/node/v6.4.0/lib/node_modules/npm/node_modules/request/request.js:200:22)
+48 verbose stack     at emitTwo (events.js:106:13)
+48 verbose stack     at Request.emit (events.js:191:7)
+48 verbose stack     at Request.<anonymous> (/Users/Garrett/.nvm/versions/node/v6.4.0/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+48 verbose stack     at emitOne (events.js:101:20)
+48 verbose stack     at Request.emit (events.js:188:7)
+48 verbose stack     at IncomingMessage.<anonymous> (/Users/Garrett/.nvm/versions/node/v6.4.0/lib/node_modules/npm/node_modules/request/request.js:988:12)
+49 verbose statusCode 403
+50 verbose pkgid show_password
+51 verbose cwd /Users/Garrett/Desktop/Projects/show_password
+52 error Darwin 17.4.0
+53 error argv "/Users/Garrett/.nvm/versions/node/v6.4.0/bin/node" "/Users/Garrett/.nvm/versions/node/v6.4.0/bin/npm" "publish"
+54 error node v6.4.0
+55 error npm  v3.10.3
+56 error code E403
+57 error You cannot publish over the previously published versions: 0.0.1. : show_password
+58 error If you need help, you may report this error at:
+58 error     <https://github.com/npm/npm/issues>
+59 verbose exit [ 1, true ]
