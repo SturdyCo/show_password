@@ -8,10 +8,14 @@ The easiest way to show and hide the text inside a password field.
 
 `npm install show_password --save`
 
-## General Usage
+## Usage
+
+Note: To use in a Node project, you'll have to use a package like [jsdom](https://github.com/jsdom/jsdom) to access to `document` object.
 
 ```javascript
 var ShowPassword = require('show_password')
+
+ShowPassword.initialize()
 ```
 
 Add a wrapper `div` with an `id` of `showPassword` around your password input field.
@@ -21,6 +25,15 @@ Add a wrapper `div` with an `id` of `showPassword` around your password input fi
   <input type="password">
 </div>
 ```
+
+That's it!
+
+## Configuration
+
+You can use the `ShowPassword.config` object to configure ShowPassword.
+
+`config.color`: Change the color of the visibility icons.
+
 
 ## Author
 [Garrett Martin](https://sturdy.work)
