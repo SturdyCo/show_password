@@ -2,6 +2,17 @@ var ShowPassword = {
   config: {
     color: "#666666"
   },
+  get svgStyles() {
+    return {
+      position: "absolute",
+      right: "10px",
+      margin: "auto 0",
+      top: "0",
+      bottom: "0",
+      cursor: "pointer",
+      fill: this.config.color
+    }
+  },
   initialize: function() {
     var passwordShowHideField = document.getElementById("showHidePassword")
     passwordShowHideField.setAttribute("style", "position: relative;")
@@ -25,8 +36,7 @@ var ShowPassword = {
     this.setStyles(this.svgStyles, visibilityOnElement)
     this.setStyles(this.svgStyles, visibilityOffElement)
 
-    visibilityOnElement.setAttribute("style", svgStyle)
-    visibilityOffElement.setAttribute("style", svgStyle + "display: none;")
+    this.hide(visibilityOffElement)
 
     visibilityOnElement.addEventListener("click", function(e) {
       var input = this.getInput(e)
@@ -34,7 +44,7 @@ var ShowPassword = {
       this.changeInputToText(input)
       this.hide(visibilityOnElement)
       this.show(visibilityOffElement)
-    })
+    }.bind(this))
 
     visibilityOffElement.addEventListener("click", function(e) {
       var input = this.getInput(e)
@@ -42,25 +52,16 @@ var ShowPassword = {
       this.changeInputToPassword(input)
       this.show(visibilityOnElement)
       this.hide(visibilityOffElement)
-    })
-  },
-  svgStyles: {
-    position: "absolute",
-    right: "10px",
-    margin: "auto 0",
-    top: "0",
-    bottom: "0",
-    cursor: "pointer",
-    fill: this.config.color
+    }.bind(this))
   },
   getInput: function(event) {
-    return e.target.parentElement.parentElement.querySelector("input")
+    return event.target.parentElement.parentElement.querySelector("input")
   },
   hide: function(element) {
-    this.setStyles({ display: "none" })
+    this.setStyles({ display: "none" }, element)
   },
   show: function(element) {
-    this.setStyles({ display: "inline" })
+    this.setStyles({ display: "inline" }, element)
   },
   setStyles: function(styles, element) {
     Object.assign(element.style, styles);
