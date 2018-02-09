@@ -73,3 +73,5 @@ var ShowPassword = {
     input.setAttribute("type", "password")
   }
 }
+
+module.exports = ShowPassword
